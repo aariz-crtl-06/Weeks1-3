@@ -27,7 +27,7 @@ public class jumpscare : MonoBehaviour
             t = 0;
         }
 
-
+        //If the player holds 's', then the jumpscare plays
         if (Input.GetKey(KeyCode.S))
         {
             transform.localScale = Vector2.one * bounce.Evaluate(t)*2.3f;
