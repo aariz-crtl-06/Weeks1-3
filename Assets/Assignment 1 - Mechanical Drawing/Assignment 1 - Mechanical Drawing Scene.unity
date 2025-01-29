@@ -132,8 +132,9 @@ GameObject:
   m_Component:
   - component: {fileID: 124424772}
   - component: {fileID: 124424773}
+  - component: {fileID: 124424774}
   m_Layer: 0
-  m_Name: Neutral eye2 (2)
+  m_Name: eyebrow1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,12 +148,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124424771}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0, z: -0.22154841, w: 0.9751494}
-  m_LocalPosition: {x: 2.8823082, y: 0.8400005, z: 0}
-  m_LocalScale: {x: 1.2499999, y: 0.37000003, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.22154841, w: 0.9751494}
+  m_LocalPosition: {x: 5.9753, y: 2.7328, z: 0}
+  m_LocalScale: {x: -0.17183487, y: 0.060136877, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1296432360}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -25.6}
 --- !u!212 &124424773
 SpriteRenderer:
@@ -206,6 +207,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &124424774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124424771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45601e18c65d47c41972d1f433d0ba68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: 0
 --- !u!1 &326890792
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 822901286}
   - component: {fileID: 822901285}
+  - component: {fileID: 822901287}
   m_Layer: 0
   m_Name: Neutral eye1
   m_TagString: Untagged
@@ -679,10 +694,56 @@ Transform:
   m_LocalPosition: {x: 6, y: 2.59, z: 0}
   m_LocalScale: {x: -0.13, y: 0.17, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1492554915}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &822901287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822901284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992bf3e5c05c25141adad3706c2985bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounce2:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.2964775
+      value: 1.0046479
+      inSlope: -0.007075532
+      outSlope: -0.007075532
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9650879
+      value: 0.52378464
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  t: 0
+  pop: 0.3
 --- !u!1 &1296432359
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1296432360}
   - component: {fileID: 1296432361}
+  - component: {fileID: 1296432362}
   m_Layer: 0
   m_Name: Neutral eye2
   m_TagString: Untagged
@@ -712,8 +774,7 @@ Transform:
   m_LocalPosition: {x: 6.35, y: 2.59, z: 0}
   m_LocalScale: {x: -0.13, y: 0.17, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 124424772}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1296432361
@@ -768,6 +829,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1296432362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296432359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992bf3e5c05c25141adad3706c2985bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounce2:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.2964775
+      value: 1.0046479
+      inSlope: -0.007075532
+      outSlope: -0.007075532
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9650879
+      value: 0.52378464
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  t: 0
+  pop: 0.3
 --- !u!1 &1371601828
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,8 +970,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1492554915}
   - component: {fileID: 1492554916}
+  - component: {fileID: 1492554917}
   m_Layer: 0
-  m_Name: Neutral eye2 (1)
+  m_Name: eyebrow2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -877,12 +986,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492554914}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.25215378, w: 0.9676872}
-  m_LocalPosition: {x: -2.94, y: 0.9, z: 0}
-  m_LocalScale: {x: 1.25, y: 0.37, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.25215378, w: 0.9676872}
+  m_LocalPosition: {x: 6.3822002, y: 2.743, z: 0}
+  m_LocalScale: {x: -0.17440778, y: 0.0593753, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 822901286}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 29.21}
 --- !u!212 &1492554916
 SpriteRenderer:
@@ -936,6 +1045,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1492554917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492554914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45601e18c65d47c41972d1f433d0ba68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: 0
 --- !u!1 &1599105193
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,7 +1069,7 @@ GameObject:
   - component: {fileID: 1599105195}
   - component: {fileID: 1599105194}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1113,6 +1235,8 @@ SceneRoots:
   - {fileID: 754304075}
   - {fileID: 1821680641}
   - {fileID: 822901286}
-  - {fileID: 1599105195}
   - {fileID: 637970380}
+  - {fileID: 1599105195}
+  - {fileID: 1492554915}
+  - {fileID: 124424772}
   - {fileID: 1296432360}
